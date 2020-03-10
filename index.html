@@ -5,22 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ColorGun</title>
+    <link rel="stylesheet" href="Css/colorMatrix.css">
 </head>
 <body>
-    <h1>Color Matrix</h1>
-    <p>
-        Comenzando por la esquina superior <br/>
-        el objetivo es ir cambiando los colores <br/>
-        para tener todo el marco de un solo color
-    </p>
-    <canvas width="400" height="400" id="dibujo"></canvas>
-    <br/><button id="1">rojo</button>
-    <button id="2">verde</button>
-    <button id="3">azul</button>
-    <button id="4">amarillo</button>
-    <button id="5">naranja</button>
-    <button id="6">rosa</button>
-    <button id="7">morado</button>
+    <div class="contenedor">
+        <h1>Color Matrix</h1>
+        <p>
+            Comenzando por la esquina superior izquierda, <br/>
+            el objetivo es cambiar los colores usando  <br/>
+            los botones, para tener todo el marco <br/>
+            de un solo color
+        </p>
+
+        <div class="canvas">
+            <canvas width="400" height="400" id="dibujo"></canvas>
+        </div>        
+
+        <div class="botones">
+            <br/>
+            <button id="1" class="rojo"></button>
+            <button id="2" class="verde"></button>
+            <button id="3" class="azul"></button>
+            <button id="4" class="amarillo"></button>
+            <button id="5" class="naranja"></button>
+            <button id="6" class="rosa"></button>
+            <button id="7" class="morado"></button>
+        </div>
+    </div>
     <script src="Codigo.js"></script>
 </body>
 </html>

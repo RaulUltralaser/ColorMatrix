@@ -98,41 +98,6 @@ function cambiarColor (numColor){
     dibujarMatriz();
 }
 
-//funciones de cambio de color
-function cambiarRojo()
-{
-    cambiarColor(1);
-}
-
-function cambiarVerde()
-{
-    cambiarColor(2);
-}
-
-function cambiarAzul()
-{
-    cambiarColor(3);
-}
-
-function cambiarAmarillo()
-{
-    cambiarColor(4);
-}
-
-function cambiarNaranja()
-{
-    cambiarColor(5);
-}
-
-function cambiarRosa()
-{
-    cambiarColor(6);
-}
-
-function cambiarMorado()
-{
-    cambiarColor(7);
-}
 
 // Esta funcion redibuja la matriz con los nuevos colores
 function dibujarMatriz()
@@ -170,13 +135,13 @@ var control=new Array(numeroCuadros);
 var movimientos=0;
 
 //agrega la funcion respectiva a los colores
-rojo.addEventListener("click", cambiarRojo)
-verde.addEventListener("click", cambiarVerde)
-azul.addEventListener("click", cambiarAzul)
-amarillo.addEventListener("click", cambiarAmarillo)
-naranja.addEventListener("click", cambiarNaranja)
-rosa.addEventListener("click", cambiarRosa)
-morado.addEventListener("click", cambiarMorado)
+rojo.addEventListener("click", () => cambiarColor(1))
+verde.addEventListener("click", () => cambiarColor(2))
+azul.addEventListener("click", () => cambiarColor(3))
+amarillo.addEventListener("click", () => cambiarColor(4))
+naranja.addEventListener("click", () => cambiarColor(5))
+rosa.addEventListener("click", () => cambiarColor(6))
+morado.addEventListener("click", () => cambiarColor(7))
 
 // Aqui se dibuja el marco solamente
 dibujarLinea("black", 1, 1, ancho, 1);
